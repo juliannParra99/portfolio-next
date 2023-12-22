@@ -1,7 +1,8 @@
 "use client";
-import React, { useState } from "react";
+import React, { useState, useRef } from "react";
 import ProjectCard from "./ProjectCard";
 import ProjectTag from "./ProjectTag";
+import { motion, useInView } from "framer-motion";
 
 //change the "image" property for the link to real project
 const projectsData = [
@@ -51,9 +52,17 @@ const projectsData = [
 
 //   This component essentially manages a section displaying projects, providing tag selection buttons and dynamically rendering project cards based on the selected tag
 const ProjectsSection = () => {
-
   // State hook to manage the selected tag
   const [tag, setTag] = useState("All");
+
+  //with whis we will handle the state of our animation
+  const ref = useRef(null);
+  const isInView = useInView(ref, { once: true });
+//animation
+  const cardVariants = {
+    initial: { y: 50, opacity: 0 },
+    animate: { y: 0, opacity: 1 },
+  };
 
   // Filter projects based on the selected tag
   const filteredProjects = projectsData.filter((project) =>
@@ -65,8 +74,10 @@ const ProjectsSection = () => {
     setTag(newTag);
   };
 
+
+
   return (
-    <section className="my-8 md:my-12">
+    <section ref={ref} className="my-8 md:my-12">
       <h2 className="text-center text-4xl font-bold text-white mt-4 mb-8 md:mb-12">
         My Projects
       </h2>
@@ -87,16 +98,23 @@ const ProjectsSection = () => {
           isSelected={tag == "Mobile"}
         />
       </div>
-      <div className="grid md:grid-cols-3 gap-8 md:gap-12">
+      <ul className="grid md:grid-cols-3 gap-8 md:gap-12">
         {filteredProjects.map((project, index) => (
-          <ProjectCard
+          <motion.li
+            variants={cardVariants}
+            initial="initial"
+            animate={isInView ? "animate" : "initial"}
+            transition={{ duration: 0.3, delay: index * 0.4 }}
             key={project.id}
-            title={project.title}
-            description={project.description}
-            imgUrl={project.image}
-          />
+          >
+            <ProjectCard
+              title={project.title}
+              description={project.description}
+              imgUrl={project.image}
+            />
+          </motion.li>
         ))}
-      </div>
+      </ul>
     </section>
   );
 };
