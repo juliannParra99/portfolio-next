@@ -5,18 +5,32 @@ import Image from "next/image";
 import TabButton from "./TabButton";
 
 // Array of tab data objects containing titles, IDs, and content
+
+const aboutMeSection = [
+  {
+    "aboutMe": `Random introduction: I am a full stack web developer with a passion for creating
+    interactive and responsive web applications. I have experience
+    working with JavaScript, React, Redux, Node.js, Express, PostgreSQL,
+    Sequelize, HTML, CSS, and Git. I am a quick learner and I am always
+    looking to expand my knowledge and skill set. I am a team player and
+    I am excited to work with others to create amazing applications.` 
+  }
+];
+
 const TAB_DATA = [
   {
     title: "Skills",
     id: "skills",
     content: (
       <ul className="list-disc pl-2">
-        <li>Node.js</li>
-        <li>Express</li>
-        <li>PostgreSQL</li>
+        <li>TypeScript Node.js, Express</li>
+        <li>C# .Net Framework</li>
+        <li>Python, Django</li>
+        <li>React.js, Next.js, Zustand, Material UI, Tailwind</li>
+        <li>MySQL</li>
+        <li>Microsoft SQL server</li>
         <li>Sequelize</li>
         <li>MongoDB</li>
-        <li>Mongoose</li>
       </ul>
     ),
   },
@@ -26,7 +40,7 @@ const TAB_DATA = [
     content: (
       <ul className="list-disc pl-2">
         <li>Fullstack Academy of Code</li>
-        <li>University of California, Santa Cruz</li>
+        <li>University of Buenos Aires, Bachelor of Psychology </li>
       </ul>
     ),
   },
@@ -35,8 +49,7 @@ const TAB_DATA = [
     id: "certifications",
     content: (
       <ul className="list-disc pl-2">
-        <li>AWS Cloud Practitioner</li>
-        <li>Google Professional Cloud Developer</li>
+        <li>Google Computing Cloud, 2022</li>
       </ul>
     ),
   },
@@ -56,7 +69,7 @@ const AboutSection = () => {
   // Return JSX representing the about section
 
   return (
-    <section className="text-white">
+    <section id="about" className="text-white">
       <div className="gap-8 items-center py-8 px-4 xl:gap-16 md:grid md:grid-cols-2 sm:py-16 lg:px-16">
         {/* change image for a good one */}
         <Image
@@ -68,12 +81,7 @@ const AboutSection = () => {
         <div className="mt-4 md:mt-0 text-left flex flex-col h-full">
           <h2 className="text-4xl font-bold text-white mb-4">About Me</h2>
           <p className="text-white text-base md:text-lg">
-            Random introduction: I am a full stack web developer with a passion for creating
-            interactive and responsive web applications. I have experience
-            working with JavaScript, React, Redux, Node.js, Express, PostgreSQL,
-            Sequelize, HTML, CSS, and Git. I am a quick learner and I am always
-            looking to expand my knowledge and skill set. I am a team player and
-            I am excited to work with others to create amazing applications.
+          {aboutMeSection[0].aboutMe}
           </p>
           <div className="flex flex-row justify-start mt-8">
             <TabButton

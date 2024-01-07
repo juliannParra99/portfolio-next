@@ -7,47 +7,48 @@ import { motion, useInView } from "framer-motion";
 //change the "image" property for the link to real project
 const projectsData = [
   {
-    id: 1,
-    title: "React Portfolio Website",
+    title: "Digital E-commerce",
+    description: "ecommerce",
+    image: "images/projects-section/digital-ecommerce.png",
+    tag: ["All", "Web"],
+  },
+  {
+    title: "Study Cases News Application",
     description: "Project 1 description",
-    image: "/images/hero_image.png",
+    image: "images/projects-section/study-cases.png",
     tag: ["All", "Web"],
   },
   {
-    id: 2,
-    title: "Potography Portfolio Website",
-    description: "Project 2 description",
-    image: "/images/hero_image.png",
+    title: "E-commerce Inventory Management",
+    description: "Project 1 description",
+    image: "images/projects-section/inventory-management.png",
     tag: ["All", "Web"],
   },
   {
-    id: 3,
-    title: "E-commerce Application",
-    description: "Project 3 description",
-    image: "/images/hero_image.png",
+    title: "Music Records Management System",
+    description: "Project 1 description",
+    image: "images/projects-section/music-records.png",
     tag: ["All", "Web"],
   },
   {
-    id: 4,
-    title: "Food Ordering Application",
-    description: "Project 4 description",
-    image: "/images/hero_image.png",
-    tag: ["All", "Mobile"],
-  },
-  {
-    id: 5,
-    title: "React Firebase Template",
-    description: "Authentication and CRUD operations",
-    image: "/images/hero_image.png",
+    title: "Students Management System",
+    description: "Project 1 description",
+    image: "images/projects-section/Students_management.png",
     tag: ["All", "Web"],
   },
   {
-    id: 6,
-    title: "Full-stack Roadmap",
-    description: "Project 5 description",
-    image: "/images/hero_image.png",
+    title: "Movies and Series Streamin App",
+    description: "Project 1 description",
+    image: "images/projects-section/movies-app-next-js.png",
     tag: ["All", "Web"],
   },
+  {
+    title: "Criptocurrency Prices Application",
+    description: "Project 1 description",
+    image: "images/projects-section/criptocurrency-prices-api.png",
+    tag: ["All", "Web"],
+  },
+  
 ];
 
 //   This component essentially manages a section displaying projects, providing tag selection buttons and dynamically rendering project cards based on the selected tag
@@ -77,7 +78,7 @@ const ProjectsSection = () => {
 
 
   return (
-    <section ref={ref} className="my-8 md:my-12">
+    <section id="projects" ref={ref} className="my-8 md:my-12">
       <h2 className="text-center text-4xl font-bold text-white mt-4 mb-8 md:mb-12">
         My Projects
       </h2>
@@ -105,7 +106,7 @@ const ProjectsSection = () => {
             initial="initial"
             animate={isInView ? "animate" : "initial"}
             transition={{ duration: 0.3, delay: index * 0.4 }}
-            key={project.id}
+            key={index}
           >
             <ProjectCard
               title={project.title}
