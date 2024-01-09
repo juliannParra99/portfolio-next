@@ -8,47 +8,49 @@ import { motion, useInView } from "framer-motion";
 const projectsData = [
   {
     title: "Digital E-commerce",
-    description: "ecommerce",
+    description: `Powered by secure payment systems and reliable authentication is responsive, ensuring an optimal experience across devices. Its versatility makes it adaptable to various niches and business ideas, providing a robust foundation for entrepreneurial ventures.`,
     image: "images/projects-section/digital-ecommerce.png",
     tag: ["All", "Web"],
   },
   {
     title: "Study Cases News Application",
-    description: "Project 1 description",
+    description: `Study Cases News Platform: A scalable model powered by Next.js, React, and Typescript. Unlocking potential expansions into diverse niches, offering curated insights and paving the way for versatile business models`,
     image: "images/projects-section/study-cases.png",
     tag: ["All", "Web"],
   },
   {
     title: "E-commerce Inventory Management",
-    description: "Project 1 description",
+    description: `A user-friendly desktop application empowering precise record handling and error-free inventory control. Seamlessly organize, modify, and swiftly access data. Designed to streamline operations, optimize decision-making, and enhance overall efficiency.`,
+    
     image: "images/projects-section/inventory-management.png",
-    tag: ["All", "Web"],
+    tag: ["All", "Desktop"],
   },
   {
     title: "Music Records Management System",
-    description: "Project 1 description",
+    description: "Disk management app in C#. Enables streamlined handling of diverse disk types—unlocking business potentials through efficient data organization and management.",
     image: "images/projects-section/music-records.png",
-    tag: ["All", "Web"],
+    tag: ["All", "Desktop"],
   },
   {
     title: "Students Management System",
-    description: "Project 1 description",
+    description: `Revamped project features robust security for student data management. Seamlessly handles complex tasks like user authentication, data manipulation, and system flexibility. Adaptable for diverse educational niches, offering scalable solutions for varied business models.`,
     image: "images/projects-section/Students_management.png",
     tag: ["All", "Web"],
   },
   {
     title: "Movies and Series Streamin App",
-    description: "Project 1 description",
+    description: `Versatile movie and series catalog web app using Next.js and Typescript, primed for diverse niches and business models. Its adaptable framework and versatile features open doors for varied applications, from entertainment hubs to educational platforms, offering scalable solutions for entrepreneurial ventures.`,
+
     image: "images/projects-section/movies-app-next-js.png",
     tag: ["All", "Web"],
   },
   {
     title: "Criptocurrency Prices Application",
-    description: "Project 1 description",
+    description: ` Utilizes an API for real-time values, showcasing major Cryptocurrency prices. Unlocking potential business opportunities through real-time market insights and cryptocurrency value tracking.`,
     image: "images/projects-section/criptocurrency-prices-api.png",
     tag: ["All", "Web"],
   },
-  
+
 ];
 
 //   This component essentially manages a section displaying projects, providing tag selection buttons and dynamically rendering project cards based on the selected tag
@@ -59,7 +61,7 @@ const ProjectsSection = () => {
   //with whis we will handle the state of our animation
   const ref = useRef(null);
   const isInView = useInView(ref, { once: true });
-//animation
+  //animation
   const cardVariants = {
     initial: { y: 50, opacity: 0 },
     animate: { y: 0, opacity: 1 },
@@ -94,9 +96,9 @@ const ProjectsSection = () => {
           isSelected={tag === "Web"}
         />
         <ProjectTag
-          name="Mobile"
+          name="Desktop"
           onClick={handleTagChange}
-          isSelected={tag == "Mobile"}
+          isSelected={tag == "Desktop"}
         />
       </div>
       <ul className="grid md:grid-cols-3 gap-8 md:gap-12">

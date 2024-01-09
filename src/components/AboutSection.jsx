@@ -8,12 +8,9 @@ import TabButton from "./TabButton";
 
 const aboutMeSection = [
   {
-    "aboutMe": `Random introduction: I am a full stack web developer with a passion for creating
-    interactive and responsive web applications. I have experience
-    working with JavaScript, React, Redux, Node.js, Express, PostgreSQL,
-    Sequelize, HTML, CSS, and Git. I am a quick learner and I am always
-    looking to expand my knowledge and skill set. I am a team player and
-    I am excited to work with others to create amazing applications.` 
+    "aboutMe": `I'm a FullStack Software developer.My approach revolves around merging languages and tools to breathe life into innovative business ideas and practical aplications. My focus lies in deeply understanding business needs. This translates into solutions that are not just technically sound but also add value and solve real business problems.
+    My soft skills are my main force. Clear communication and the ability to lead or collaborate within teams are crucial in translating business visions into tangible products.
+    I firmly believe in constant improvement. I keep my skills updated, foster creativity, and learn from every project, always seeking ways to overcome challenges. ` 
   }
 ];
 
@@ -24,11 +21,10 @@ const TAB_DATA = [
     content: (
       <ul className="list-disc pl-2">
         <li>TypeScript Node.js, Express</li>
+        <li>React.js, Next.js, Zustand, Material UI, Tailwind</li>
         <li>C# .Net Framework</li>
         <li>Python, Django</li>
-        <li>React.js, Next.js, Zustand, Material UI, Tailwind</li>
-        <li>MySQL</li>
-        <li>Microsoft SQL server</li>
+        <li>MySQL, Microsoft SQL server</li>
         <li>Sequelize</li>
         <li>MongoDB</li>
       </ul>
@@ -39,7 +35,6 @@ const TAB_DATA = [
     id: "education",
     content: (
       <ul className="list-disc pl-2">
-        <li>Fullstack Academy of Code</li>
         <li>University of Buenos Aires, Bachelor of Psychology </li>
       </ul>
     ),

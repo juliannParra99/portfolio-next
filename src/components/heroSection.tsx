@@ -40,7 +40,7 @@ const HeroSection = () => {
             />
           </h1>
           <p className="text-[#ADB7BE] text-base sm:text-lg mb-6 lg:text-xl">
-            Services and stuff: scalability, business management, architecture. Building experiences and Business. 
+            Explore my portfolio to witness how I turn ideas into solutions. I'm ready to collaborate, lead, or integrate within teams to take projects to the next level.
           </p>
           <div>
             <button className="bg-gradient-to-br from-blue-500 via-purple-500 to-red-500 hover:bg-slate-200 text-white px-6 py-3 rounded-full mr-4">
@@ -61,9 +61,9 @@ const HeroSection = () => {
         >
           <div className="rounded-full bg-[#181818] w-[250px] h-[250px] lg:w-[400px] lg:h-[400px] relative">
             <Image
-              src="/images/hero_image.png"
+              src="/images/picture-me-4x4.png"
               alt="hero image"
-              className="absolute transform -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2"
+              className="rounded-full absolute transform -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2"
               width={300}
               height={300}
             />
