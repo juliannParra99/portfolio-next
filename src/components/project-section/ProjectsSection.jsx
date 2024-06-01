@@ -7,6 +7,12 @@ import { motion, useInView } from "framer-motion";
 //change the "image" property for the link to real project
 const projectsData = [
   {
+    title: "Replicate: Image Generation",
+    description: `Web application that leverages the power of Replicate's API to empower users to generate images from text descriptions (prompts).`,
+    image: "images/projects-section/replicate.png",
+    tag: ["All", "Web"],
+  },
+  {
     title: "Digital E-commerce",
     description: `Powered by secure payment systems and reliable authentication is responsive, ensuring an optimal experience across devices. Its versatility makes it adaptable to various niches and business ideas, providing a robust foundation for entrepreneurial ventures.`,
     image: "images/projects-section/digital-ecommerce.png",
@@ -21,13 +27,14 @@ const projectsData = [
   {
     title: "E-commerce Inventory Management",
     description: `A user-friendly desktop application empowering precise record handling and error-free inventory control. Seamlessly organize, modify, and swiftly access data. Designed to streamline operations, optimize decision-making, and enhance overall efficiency.`,
-    
+
     image: "images/projects-section/inventory-management.png",
     tag: ["All", "Desktop"],
   },
   {
     title: "Music Records Management System",
-    description: "Disk management app in C#. Enables streamlined handling of diverse disk types—unlocking business potentials through efficient data organization and management.",
+    description:
+      "Disk management app in C#. Enables streamlined handling of diverse disk types—unlocking business potentials through efficient data organization and management.",
     image: "images/projects-section/music-records.png",
     tag: ["All", "Desktop"],
   },
@@ -50,7 +57,6 @@ const projectsData = [
     image: "images/projects-section/criptocurrency-prices-api.png",
     tag: ["All", "Web"],
   },
-
 ];
 
 //   This component essentially manages a section displaying projects, providing tag selection buttons and dynamically rendering project cards based on the selected tag
@@ -76,8 +82,6 @@ const ProjectsSection = () => {
   const handleTagChange = (newTag) => {
     setTag(newTag);
   };
-
-
 
   return (
     <section id="projects" ref={ref} className="my-8 md:my-12">
