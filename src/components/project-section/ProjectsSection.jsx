@@ -7,6 +7,12 @@ import { motion, useInView } from "framer-motion";
 //change the "image" property for the link to real project
 const projectsData = [
   {
+    title: "Authentication and Authorization: .NET, Entity Framework",
+    description: ` .NET Core module that handles user authentication and authorization with Entity Framework Core for data storage. Users cannot access backend data without proper credentials.`,
+    image: "images/projects-section/api-jwt-img.png",
+    tag: ["All", "Web"],
+  },
+  {
     title: "Replicate: Image Generation",
     description: `Web application that leverages the power of Replicate's API to empower users to generate images from text descriptions (prompts).`,
     image: "images/projects-section/replicate.png",
