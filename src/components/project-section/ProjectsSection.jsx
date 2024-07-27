@@ -9,58 +9,58 @@ const projectsData = [
   {
     title: "Authentication and Authorization: .NET, Entity Framework",
     description: ` .NET Core module that handles user authentication and authorization with Entity Framework Core for data storage. Users cannot access backend data without proper credentials.`,
-    image: "images/projects-section/api-jwt-img.png",
+    image: "/images/projects-section/api-jwt-img.png",
     tag: ["All", "Web"],
   },
   {
     title: "Replicate: Image Generation",
     description: `Web application that leverages the power of Replicate's API to empower users to generate images from text descriptions (prompts).`,
-    image: "images/projects-section/replicate.png",
+    image: "/images/projects-section/replicate.png",
     tag: ["All", "Web"],
   },
   {
     title: "Digital E-commerce",
     description: `Powered by secure payment systems and reliable authentication is responsive, ensuring an optimal experience across devices. Its versatility makes it adaptable to various niches and business ideas, providing a robust foundation for entrepreneurial ventures.`,
-    image: "images/projects-section/digital-ecommerce.png",
+    image: "/images/projects-section/digital-ecommerce.png",
     tag: ["All", "Web"],
   },
   {
     title: "Study Cases News Application",
     description: `Study Cases News Platform: A scalable model powered by Next.js, React, and Typescript. Unlocking potential expansions into diverse niches, offering curated insights and paving the way for versatile business models`,
-    image: "images/projects-section/study-cases.png",
+    image: "/images/projects-section/study-cases.png",
     tag: ["All", "Web"],
   },
   {
     title: "E-commerce Inventory Management",
     description: `A user-friendly desktop application empowering precise record handling and error-free inventory control. Seamlessly organize, modify, and swiftly access data. Designed to streamline operations, optimize decision-making, and enhance overall efficiency.`,
 
-    image: "images/projects-section/inventory-management.png",
+    image: "/images/projects-section/inventory-management.png",
     tag: ["All", "Desktop"],
   },
   {
     title: "Music Records Management System",
     description:
       "Disk management app in C#. Enables streamlined handling of diverse disk types—unlocking business potentials through efficient data organization and management.",
-    image: "images/projects-section/music-records.png",
+    image: "/images/projects-section/music-records.png",
     tag: ["All", "Desktop"],
   },
   {
     title: "Students Management System",
     description: `Revamped project features robust security for student data management. Seamlessly handles complex tasks like user authentication, data manipulation, and system flexibility. Adaptable for diverse educational niches, offering scalable solutions for varied business models.`,
-    image: "images/projects-section/Students_management.png",
+    image: "/images/projects-section/Students_management.png",
     tag: ["All", "Web"],
   },
   {
     title: "Movies and Series Streamin App",
     description: `Versatile movie and series catalog web app using Next.js and Typescript, primed for diverse niches and business models. Its adaptable framework and versatile features open doors for varied applications, from entertainment hubs to educational platforms, offering scalable solutions for entrepreneurial ventures.`,
 
-    image: "images/projects-section/movies-app-next-js.png",
+    image: "/images/projects-section/movies-app-next-js.png",
     tag: ["All", "Web"],
   },
   {
     title: "Criptocurrency Prices Application",
     description: ` Utilizes an API for real-time values, showcasing major Cryptocurrency prices. Unlocking potential business opportunities through real-time market insights and cryptocurrency value tracking.`,
-    image: "images/projects-section/criptocurrency-prices-api.png",
+    image: "/images/projects-section/criptocurrency-prices-api.png",
     tag: ["All", "Web"],
   },
 ];

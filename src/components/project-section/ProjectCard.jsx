@@ -7,14 +7,15 @@ import Link from "next/link";
 const ProjectCard = ({ imgUrl, title, description }) => {
   return (
     <div>
-      <div
-        className="group rounded-t-xl h-52 md:h-72 bg-center relative overflow-hidden"
-        src={imgUrl}
-        alt={title}
-        width={300}
-        height={300}
-        style={{ background: `url(${imgUrl})`, backgroundSize: "contain" }}
-      >
+      <div className="group relative h-52 md:h-72 rounded-t-xl overflow-hidden">
+        <Image
+          className="object-contain w-full h-full"
+          style={{ objectPosition: "center" }}
+          width={300}
+          height={300}
+          src={imgUrl}
+          alt={title}
+        />
         <div className="overlay absolute top-0 left-0 w-full h-full bg-[#181818] bg-opacity-0 hidden group-hover:flex group-hover:bg-opacity-80 transition-all duration-500 items-center justify-center">
           <Link
             href="/"
