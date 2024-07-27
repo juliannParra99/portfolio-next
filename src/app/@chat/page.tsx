@@ -71,7 +71,7 @@ export default function ChatPage() {
         <Image src={MessageIcon} alt="GitHub Icon" />
       </button>
       {isChatOpen && (
-        <div className="chat-window fixed bottom-20 right-4 bg-gray-800 bg-opacity-95 shadow-lg rounded-lg p-6 w-full max-w-md h-[70vh] md:w-96 md:h-96 flex flex-col z-10">
+        <div className="chat-window fixed bottom-20 right-4 bg-gray-800 bg-opacity-95 shadow-lg rounded-lg p-2 w-full max-w-md h-[70vh] md:w-96 md:h-120 flex flex-col z-10">
           <section className="flex flex-col gap-6 h-full">
             <article className="chat-messages flex-1 overflow-y-auto">
               {messages.map((message) => (
@@ -87,7 +87,7 @@ export default function ChatPage() {
                 </div>
               ))}
             </article>
-            <form onSubmit={handleSubmit} className="chat-form flex mt-4">
+            <form onSubmit={handleSubmit} className="chat-form flex mt-0">
               <input
                 className="flex-1 rounded-l-lg bg-white px-4 leading-[3rem] text-black"
                 type="text"

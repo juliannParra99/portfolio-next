@@ -26,12 +26,12 @@ const navLinks = [
 
 const Navbar = () => {
   // Manages the state for the mobile menu toggle in the Navbar component.
-// Controls the visibility of the menu icon based on screen size/responsiveness.
+  // Controls the visibility of the menu icon based on screen size/responsiveness.
   const [navbarOpen, setNavbarOpen] = useState(false);
 
   return (
     <nav className="fixed top-0 left-0 right-0 z-10 bg-[#121212] bg-opacity-90">
-      <div className="flex flex-wrap items-center justify-between mx-auto p-8">
+      <div className="flex flex-wrap items-center justify-between mx-auto p-2">
         <Link
           href="/"
           className="text-2xl md:text-5xl text-white font-semibold"
@@ -62,10 +62,7 @@ const Navbar = () => {
             {navLinks.map((link) => {
               return (
                 <li key={link.title}>
-                  <NavLink
-                    title={link.title}
-                    href={link.path}
-                  />
+                  <NavLink title={link.title} href={link.path} />
                 </li>
               );
             })}
